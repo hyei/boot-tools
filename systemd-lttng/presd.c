@@ -186,7 +186,7 @@ int main()
         }
 
         /* wait for the daemon */
-        sleep(1);
+        sleep(2);
 
 
         /* create lttng session */

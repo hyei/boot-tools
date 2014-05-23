@@ -155,7 +155,7 @@ int main()
 
                         printf("NOTE: Launching systemd...\n");
                         char *const argv_init[] = {arg_init_path, NULL};
-                        char *const envp[] = {NULL};
+                        char *const envp[] = {"LTTNG_HOME=/home/root"};
 
                         execve(argv_init[0], argv_init, envp);
 
